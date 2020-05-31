@@ -42,7 +42,7 @@
                                 <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/bird">Bird</a>
                                 <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/cat">Cat</a>
                                 <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/god">God</a>
-                                <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/spider">Spier</a>
+                                <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/spider">Spider</a>
                                                        
                         </li>
                         <li class="nav-item dropdown">
