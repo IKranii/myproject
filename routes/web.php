@@ -45,16 +45,31 @@ $cat = "http://www.onyxtruth.com/wp-content/uploads/2017/06/black-panther-movie-
 return view("test/cat", compact("cat") );
 });
 
+Route::get("/gallery/god" , function(){
+$god = "https://amp.insider.com/images/5b7acee73cccd122008b45ac-750-563.jpg";
+
+return view("test/god", compact("god") );
+});
+
+Route::get("/gallery/spider" , function(){
+$spider = "https://cdn1us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2019/03/spider-man-far-from-home-tom-holland.jpg";
+
+return view("test/spider", compact("spider") );
+});
+
 Route::get("/myprofile/create","MyProfileController@create");
 Route::get("/myprofile/{id}/edit", "MyProfileController@edit");
 Route::get("/myprofile/{id}", "MyProfileController@show");
 Route::get("/newgallery", "MyProfileController@gallery");
 Route::get("/newgallery/ant", "MyProfileController@ant");
 Route::get("/newgallery/bird", "MyProfileController@bird");
+Route::get("/newgallery/cat", "MyProfileController@cat");
+Route::get("/newgallery/god", "MyProfileController@god");
+Route::get("/newgallery/spider", "MyProfileController@spider");
 Route::get( "/coronavirus" , "MyProfileController@coronavirus" );
-/*Route::get("/teacher" , function (){
+Route::get("/teacher" , function (){
 	return view("teacher/index");
-});*/
+});
 
 Route::get("/student" , function (){
 	return view("student/index");
@@ -121,3 +136,13 @@ Route::resource('vehicle', 'VehicleController');
 Route::resource('profile', 'ProfileController');
 Route::resource('user', 'UserController');
 Route::resource('book', 'BookController');
+
+
+Route::resource('product', 'ProductController');
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('order', 'OrderController');
+    Route::resource('payment', 'PaymentController');
+    Route::resource('order-product', 'OrderProductController');
+});
+

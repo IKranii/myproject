@@ -63,6 +63,21 @@ class MyProfileController extends Controller
         $bird = "https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2019/04/captain_america-civil_war-anthony_mackie-photofest-h_2019.jpg";
         return view("test/bird", compact("bird"));
     }
+    public function cat()
+    {
+         $cat = "http://www.onyxtruth.com/wp-content/uploads/2017/06/black-panther-movie-onyx-truth.jpg";
+        return view("test/cat", compact("cat"));
+    }
+    public function god()
+    {
+        $god = "https://amp.insider.com/images/5b7acee73cccd122008b45ac-750-563.jpg";
+        return view("test/god", compact("god"));
+    }
+    public function spider()
+    {
+        $spider = "https://cdn1us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2019/03/spider-man-far-from-home-tom-holland.jpg";
+        return view("test/spider", compact("spider"));
+    }
     
     public function coronavirus(){
         $reports = [

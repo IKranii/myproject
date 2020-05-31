@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -29,7 +30,58 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Gallery
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://localhost/myproject/public/newgallery">Newgallery</a>
+                                <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/ant">Ant</a>
+                                <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/bird">Bird</a>
+                                <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/cat">Cat</a>
+                                <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/god">God</a>
+                                <a class="dropdown-item" href="http://localhost/myproject/public/newgallery/spider">Spier</a>
+                                                       
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            table
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link" href="http://localhost/myproject/public/teacher">Teacher<span class="sr-only">(current)</span></a>                
+                            <a class="nav-link" href="http://localhost/myproject/public/student">Student<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="http://localhost/myproject/public/table">Table<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://localhost/myproject/public/covid19">Covid19<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://localhost/myproject/public/staff">Staff<span class="sr-only">(current)</span></a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Crud Generator
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link" href="http://localhost/myproject/public/post">Post<span class="sr-only">(current)</span></a>                
+                            <a class="nav-link" href="http://localhost/myproject/public/profile">Profile<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="http://localhost/myproject/public/vehicle">Vehicle<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="http://localhost/myproject/public/book">Book<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="http://localhost/myproject/public/product">Product<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="http://localhost/myproject/public/order">Order<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="http://localhost/myproject/public/payment">Payment<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="http://localhost/myproject/public/order-product">Order-product<span class="sr-only">(current)</span></a>
 
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://localhost/myproject/public/vehicle/pdf">Vehicle PDF<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
